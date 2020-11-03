@@ -1,0 +1,24 @@
+{
+    "name": "pbxhq/kazoo",
+    "description": "Kazoo Wrapper for easy Kazoo API calls",
+    "type": "library",
+    "require": {
+        "laravel/framework": "^8.0"
+    },
+    "authors": [
+        {
+            "name": "Aaron",
+            "email": "aaron@pbxhq.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pbxhq\\Kazoo\\KazooServiceProvider"
+            ],
+            "aliases": {
+                "Kazoo": "Pbxhq\\Kazoo\\KazooController"
+            }
+        }
+    }
+}
