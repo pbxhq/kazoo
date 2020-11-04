@@ -20,8 +20,8 @@ class KazooController extends Controller
 
     public function __construct()
     {
-        $this->baseUrl = env('KAZOO_BASEURL');
-        $this->apiKey = env('KAZOO_APIKEY');
+        $this->baseUrl = env('KAZOO_BASEURL', null);
+        $this->apiKey = env('KAZOO_APIKEY', null);
         $this->resellerId = env('KAZOO_RESELLER_ACCT', null);
         $authData = $this->fetchAuthToken();
         $this->authToken = $authData['authToken'];
