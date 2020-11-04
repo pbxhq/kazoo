@@ -17,7 +17,7 @@ class KazooServiceProvider extends ServiceProvider
         $configPath = __DIR__ . '/../config/kazooapi.php';
         $this->mergeConfigFrom($configPath, 'kazooapi');
 
-        $this->app->make('Pbxhq\Kazoo\KazooController');
+        //$this->app->make('Pbxhq\Kazoo\KazooController');
     }
 
     /**
