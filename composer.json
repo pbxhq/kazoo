@@ -11,6 +11,11 @@
             "email": "aaron@pbxhq.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Pbxhq\\Kazoo\\": "src/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
